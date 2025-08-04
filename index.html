@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ff41">
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop>
+            <source src="Recording 2025-08-03 123926.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="glitch-overlay"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="img.png" alt="Fixer Logo" class="hack-club-logo">
+                <span class="brand-text">FIXER</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#requirements" class="nav-link">REQUIREMENTS</a>
+                <a href="#rsvp" class="nav-link glow-btn">RSVP</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn red"></span>
+                        <span class="btn yellow"></span>
+                        <span class="btn green"></span>
+                    </div>
+                    <span class="terminal-title">hack@club:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">root@hackclub:~$ </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">█</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title glitch" data-text="FIXER">FIXER</h1>
+            <p class="hero-subtitle">THE YSWS WHERE YOU GET HACKCLUB SWAG</p>
+            <p class="hero-description">For fixing GitHub issues and contributing to Hack Club open source repositories. Earn exclusive Hack Club swag while making a real impact on the Hack Club community.</p>
+            <div class="hero-cta">
+                <button class="cta-btn primary" onclick="document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'})">RSVP NOW</button>
+                <button class="cta-btn secondary" onclick="document.getElementById('requirements').scrollIntoView({behavior: 'smooth'})">VIEW REQUIREMENTS</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">FREE</span>
+                    <span class="stat-label">SWAG</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">18&</span>
+                    <span class="stat-label">UNDER</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">ISSUES</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="neon-grid"></div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                WHAT IS FIXER?
+            </h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-icon">🔧</div>
+                    <h3>FIX ISSUES</h3>
+                    <p>Find and fix GitHub issues in Hack Club repositories. Every contribution to Hack Club projects counts, from bug fixes to feature improvements.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">🎁</div>
+                    <h3>EARN SWAG</h3>
+                    <p>Get exclusive Hack Club merchandise for your contributions to Hack Club repositories. The more Hack Club issues you fix, the cooler the swag you unlock.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🌟</div>
+                    <h3>BUILD YOUR PROFILE</h3>
+                    <p>Showcase your Hack Club contributions, build your GitHub profile, and connect with the global Hack Club developer community.</p>
+                </div>
+            </div>
+            <div class="hack-club-spotlight">
+                <img src="https://assets.hackclub.com/flag-standalone-wtransparent.svg" alt="Hack Club" class="hc-logo-large">
+                <div class="spotlight-content">
+                    <h3>POWERED BY HACK CLUB</h3>
+                    <p>Fixer is part of the global Hack Club community where teenagers learn to code and build amazing projects. Join thousands of teen developers making their mark on the world.</p>
+                    <a href="https://hackclub.com" target="_blank" class="hc-link">Learn More About Hack Club →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                READY TO START FIXING?
+            </h2>
+            <div class="rsvp-content">
+                <div class="rsvp-info">
+                    <h3>JOIN THE FIXER COMMUNITY</h3>
+                    <p>RSVP to get started on your Hack Club contribution journey and start earning exclusive Hack Club swag for your work on Hack Club repositories.</p>
+                    <div class="rsvp-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>Access to curated Hack Club GitHub issues</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>Mentorship from experienced developers</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>Exclusive Hack Club swag rewards</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>Recognition in the community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rsvp-cta">
+                    <button class="rsvp-btn" onclick="window.open('https://forms.fillout.com/t/81u5dXpgZUus', '_blank')">
+                        <span class="btn-text">RSVP TO FIXER</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                    <p class="rsvp-note">You'll be redirected to our RSVP form</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="requirements" class="requirements-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                REQUIREMENTS
+            </h2>
+            <div class="requirements-grid">
+                <div class="requirement-card main-req"> 
+                    <h3>AGE REQUIREMENT</h3>
+                    <p class="req-main">Must be 18 years old or under</p>
+                    <p class="req-desc">Fixer is exclusively for teenagers. This ensures our community stays focused on supporting young developers.</p>
+                </div>
+                <div class="requirement-card"> 
+                    <h3>BASIC CODING</h3>
+                    <p>Some programming experience in any language</p>
+                </div>
+                <div class="requirement-card"> 
+                    <h3>GITHUB ACCOUNT</h3>
+                    <p>Active GitHub account for contributing</p>
+                </div>
+                <div class="requirement-card"> 
+                    <h3>MOTIVATION</h3>
+                    <p>Passion for learning and helping others</p>
+                </div>
+                <div class="requirement-card"> 
+                    <h3>HACK CLUB</h3>
+                    <p>Join the Hack Club Slack community</p>
+                </div>
+                <div class="requirement-card">
+                    <h3>TIME COMMITMENT</h3>
+                    <p>At least 2-3 hours per day for contributions</p>
+                </div>
+            </div>
+            <div class="requirements-footer">
+                <p>Don't meet all requirements yet? No problem! We'll help you get there.</p>
+                <a href="https://hackclub.com/slack" target="_blank" class="join-community-btn">Join Hack Club Community</a>
+            </div>
+        </div>
+    </section>
+    <section id="schedule" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                HOW IT WORKS
+            </h2>
+            <div class="process-intro">
+                <p class="intro-text">Join the revolution in 5 simple steps.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-connector"></div>
+                <div class="process-step reverse" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-visual">
+                        <div class="step-number">01</div>
+                        <div class="step-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>RSVP & JOIN</h3>
+                        <p class="step-description">Sign up for Fixer and join the Hack Club Slack community to get started on your hacking journey.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Quick 2-minute signup</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Join 50,000+ teen hackers</span>
+                            </div>
+                        </div>
+                        <div class="step-tech">
+                            <span class="tech-tag">Slack</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-visual">
+                        <div class="step-number">02</div>
+                        <div class="step-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>WAIT FOR IT TO GET LAUNCHED</h3>
+                        <p class="step-description">It is a draft YSWS so you have to wait for sometime before it gets started.</p>
+                        <div class="step-details">
+                        </div>
+                        <div class="step-tech">
+                            <span class="tech-tag">Waiting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reverse" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-visual">
+                        <div class="step-number">03</div>
+                        <div class="step-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>FIND ISSUES</h3>
+                        <p class="step-description">Browse curated GitHub issues in Hack Club repositories that match your skill level and interests. From beginner-friendly to expert challenges.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Hack Club project issues</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Multiple programming languages</span>
+                            </div>
+                        </div>
+                        <div class="step-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-visual">
+                        <div class="step-number">04</div>
+                        <div class="step-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>SUBMIT FIXES</h3>
+                        <p class="step-description">Work on Hack Club issues, submit pull requests, and get feedback from experienced Hack Club maintainers and mentors.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Hack Club code review & mentoring</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Learn best practices</span>
+                            </div>
+                        </div>
+                        <div class="step-tech">
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reverse" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-visual">
+                        <div class="step-number">05</div>
+                        <div class="step-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>EARN SWAGS</h3>
+                        <p class="step-description">Get your Hack Club pull requests merged and earn exclusive Hack Club swag and community recognition.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>Exclusive Hack Club swags</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">✓</span>
+                                <span>GitHub profile building</span>
+                            </div>
+                        </div>
+                        <div class="step-tech">
+                            <span class="tech-tag">Swag</span>
+                            <span class="tech-tag">Recognition</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="process-footer">
+                <div class="footer-cta">
+                    <h3>Ready to Start Your Journey?</h3>
+                    <p>Join thousands of teen developers making their mark on Hack Club repositories</p>
+                    <button class="process-cta-btn" onclick="document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-text">START FIXING NOW</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+                <div class="process-stats">
+                    <div class="process-stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Issues Fixed</span>
+                    </div>
+                    <div class="process-stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Teen Contributors</span>
+                    </div>
+                    <div class="process-stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Open Source Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="register" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                GET STARTED
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>READY TO FIX?</h3>
+                    <p>Join thousands of teen developers who are already making their mark on Hack Club repositories and earning amazing swag.</p>
+                    <div class="contact-stats">
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Teen Contributors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Issues Fixed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Swag Items</span>
+                        </div>
+                    </div>
+                    <div class="hack-club-connect">
+                        <h4>CONNECT WITH US</h4>
+                        <div class="connect-links">
+                            <a href="https://hackclub.com/slack" target="_blank" class="connect-btn slack">
+                                <span>Join Slack</span>
+                            </a>
+                            <a href="https://github.com/hackclub" target="_blank" class="connect-btn github">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://hackclub.com" target="_blank" class="connect-btn website">
+                                <span>Hack Club</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cta">
+                    <div class="cta-content">
+                        <h3>START YOUR FIXER JOURNEY</h3>
+                        <p>RSVP now to get access to curated Hack Club GitHub issues and start earning exclusive Hack Club swag for your contributions to Hack Club repositories.</p>
+                        <button class="main-rsvp-btn" onclick="window.open('https://assets.hackclub.com/icon-square.svg', '_blank')">
+                            <span>RSVP TO FIXER</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                        <p class="cta-note">Free for all teenagers • No experience required to start</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://assets.hackclub.com/flag-standalone-wtransparent.svg" alt="Hack Club" class="footer-logo">
+                    <p>Fixer is organized with ❤️ by the Hack Club community</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>CONNECT</h4>
+                        <a href="https://hackclub.com" target="_blank">Hack Club</a>
+                        <a href="https://hackclub.com/slack" target="_blank">Join Slack</a>
+                        <a href="https://github.com/hackclub" target="_blank">GitHub</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>RESOURCES</h4>
+                        <a href="https://workshops.hackclub.com" target="_blank">Workshops</a>
+                        <a href="https://hackclub.com/bank" target="_blank">Hack Club Bank</a>
+                        <a href="https://hackclub.com/philosophy" target="_blank">Philosophy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Hack Club. Made by teenagers for teenagers.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
